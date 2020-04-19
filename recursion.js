@@ -47,7 +47,7 @@ function getData() {
             tasa = 0.002
         }
 
-        interes = capitalRec(capital,tiempo,tasa).toFixed(2)
+        interes = capitalRec(capital,tiempo,tasa)
         
         balance = capital+interes 
         
