@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inversion - UPI Bank</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>UPI Bank</h1>
+      <h2>Invierta en un Certificado de Depósito</h2>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>Inserte los siguientes datos: </h1>
+        <div>
+          <label for="lblCapital">Capital a invertir:</label>
+          <input type="text" id="capital" placeholder="Cantidad">
+        </div>
+        <div>
+          <label for="lblTiempo">Tiempo en años:</label>
+          <select id="tiempo">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+            <option value="six">6</option>
+            <option value="seven">7</option>
+            <option value="eight">8</option>
+            <option value="nine">9</option>
+            <option value="ten">10</option>
+            </select>
+        </div>
+        <div>
+          <label for="lblMoneda">Moneda:</label>
+          <select id="moneda">
+            <option value="crc">CRC</option>
+            <option value="usd">USD</option>
+            </select>
+        </div>
+        <input class="btn" type="button" value="Ingresar" id="btnIngresar" onclick="getData()">
+
+      </form>
+
+    </section>
+
+    <section class = "container">
+      <form id = "result-form">
+        <div id = "interes"></div>
+        <div id = "balance"></div>
+      </form>
+    </section>
+    <script src="recursion.js"></script>
+  </body>
+</html>
+
