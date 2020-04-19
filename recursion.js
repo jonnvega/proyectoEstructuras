@@ -33,7 +33,7 @@ function validation(){
 function getData() {
 
     if (validation()) {
-        let capital = parseInt(document.getElementById("capital").value);
+        let capital = parseFloat(document.getElementById("capital").value);
         let t = document.getElementById("tiempo");
         let tiempo = t.options[t.selectedIndex].text;
         let m = document.getElementById("moneda");
@@ -49,7 +49,7 @@ function getData() {
 
         interes = capitalRec(capital,tiempo,tasa).toFixed(2)
         
-        balance = parseFloat(capital)+parseFloat(interes) 
+        balance = capital+interes 
         
         document.getElementById("interes").innerHTML = "El interés es " + interes + " " + moneda;
         document.getElementById("balance").innerHTML = "El balance es " + balance + " " + moneda
