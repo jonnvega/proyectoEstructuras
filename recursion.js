@@ -49,7 +49,7 @@ function getData() {
 
         interes = capitalRec(capital,tiempo,tasa).toFixed(2)
         
-        balance = capital+parseFloat(interes) 
+        balance = parseFloat(capital)+parseFloat(interes) 
         
         document.getElementById("interes").innerHTML = "El interés es " + interes + " " + moneda;
         document.getElementById("balance").innerHTML = "El balance es " + balance + " " + moneda
